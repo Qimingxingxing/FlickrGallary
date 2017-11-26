@@ -1,7 +1,6 @@
 # Mini-Flickr
 
 ##### How to install this project
-## Thanks for angular-deckgrid!
 Run following command in your terminal:
 
 1. git clone https://github.com/Qimingxingxing/FlickrGallary.git
@@ -13,3 +12,5 @@ Run following command in your terminal:
 7. run npm start
 
 Now you should be able to access the project by going to http://localhost:3000 in your browser.
+
+Thanks for angular-deckgrid!
