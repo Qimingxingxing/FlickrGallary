@@ -1,9 +1,8 @@
 var express = require('express');
 var app = express();
 var router = express.Router();
-var flickrService = require('./flickrService');
+var flickrService = require('./server/flickrService');
 flickrService.getRecentFlickrPhotos(function () {
-
 	router.get('/photos', function (req, res) {
 	    var ip = req.headers['x-forwarded-for'] ||
 	        req.connection.remoteAddress ||
@@ -19,4 +18,3 @@ flickrService.getRecentFlickrPhotos(function () {
     app.listen(3000);
     console.log("Server initialized");
 });
-
